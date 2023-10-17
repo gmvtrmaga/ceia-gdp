@@ -1,0 +1,16 @@
+# Ignora archivos de salida de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+
+# Ignora archivos PDF generados
+*.pdf
+
+# Ignora archivos temporales y de respaldo
+*~
+
+# Ignora carpetas específicas (por ejemplo, la carpeta de salida)
+/output/
