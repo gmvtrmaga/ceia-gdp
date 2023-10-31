@@ -6,11 +6,9 @@
 *.synctex.gz
 *.fls
 
-# Ignora archivos PDF generados
-*.pdf
-
 # Ignora archivos temporales y de respaldo
 *~
 
 # Ignora carpetas específicas (por ejemplo, la carpeta de salida)
 /output/
+Figuras/logoFIUBA.pdf

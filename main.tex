@@ -27,8 +27,8 @@
 \pertenenciaCoDirector{FIUBA}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{Hans Manuel Grenner Noguerón}
+\empresaCliente{Critical Match}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -69,7 +69,7 @@
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
-%1      & Se completa hasta el punto 4 inclusive                 & dd/mm/aaaa \\ \hline
+1      & Se completa hasta el punto 5 inclusive                 & 31 de octubre de 2023 \\ \hline
 %2      & Se completa hasta el punto 7 inclusive
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
@@ -92,7 +92,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en \textcolor{red}{la implementación de un prototipo de un sistema de control de temperatura de un calefón}, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} h de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un servidor web que aloje una Inteligencia Artificial de tipo LLM que genere contenido narrativo a través de servicios REST, y tendrá un presupuesto preliminar estimado de \textcolor{red}{600} h de trabajo y \textcolor{red}{\$0}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -114,29 +114,37 @@ Se adjunta a esta acta la planificación inicial.
 
 \section{1. Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
+El proyecto a realizar se enfoca en ampliar las herramientas que ofrece el producto Critical Match, 
+creado por la empresa con el mismo nombre y el cual consta actualmente de una aplicación para Android y iOS.
 
+La principal función de la App es permitir a sus usuarios la creación o búsqueda de salas de juego, 
+también conocidas como mesas, donde pueden unirse a otros jugadores para organizar partidas de rol, 
+ya sea en línea o de forma presencial.
+Las mesas ofrecen un marco narrativo para que los usuarios seleccionen la que más se ajuste a sus preferencias.
 
-\begin{consigna}{red} % El bloque "consigna" se usa para poner texto en rojo y dar una pequeña ayuda sobre cómo completar la sección. En cada entrega parcial deben eliminar los comandos begin y end del bloque consigna de las secciones que hayan completado.
+Es en este punto donde se desea ampliar la funcionalidad mediante la incorporación de servicios de Inteligencia artificial para generar, 
+a partir de un contexto narrativo, una amplia gama de elementos adicionales.
+Por ejemplo: Personajes no jugables que se integren coherentemente en el mundo propuesto, 
+eventos que enriquezcan la trama, objetos, entre otros.
+El estado del arte no está suficientemente avanzado en este aspecto.
+Soluciones de Inteligencia Artificial como ChatGPT, aunque competentes, 
+suelen quedarse cortas en términos de profundidad y precisión, lo que no siempre satisface las expectativas de los jugadores de rol.
 
-El objetivo es que el lector en una o dos páginas entienda de qué trata el proyecto y cuáles son sus desafíos, cuál es la motivación para realizarlo y su importancia.
+Por otro lado, existen webs como WorldAnvil que ofrece a sus usuarios crear y gestionar sus mundos de ficción, 
+el llenado de todas y cada una de las categorías y elementos del mundo recae exclusivamente en el propio usuario.
+Es habitual que los moderadores de las partidas utilicen estas herramientas para compilar todo el contexto narrativo en un único lugar.
+Critical Match quiere incorporar esta funcionalidad en su App en un futuro cercano.
 
-Se debe introducir el contexto del proyecto, el estado del arte en la temática, describir la propuesta de valor, cúal es el problema que atiende y cuál es la solución que se propone. Se debe dar una descripción funcional de la solución que incluya un diagrama en bloques.
+El objetivo principal del proyecto es crear una Inteligencia Artificial capaz de dar mejores resultados que otros motores como ChatGPT en un contexto de generación de texto de ambientación narrativa.
+Esto implica desarrollar un sistema de IA altamente especializado y entrenado específicamente para la generación de contenido narrativo relacionado con partidas de rol, ofreciendo una profundidad y precisión que supere las limitaciones de las soluciones generales. 
 
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
-
-\begin{itemize}
-	\item ¿Cuál es el contexto del proyecto, es un emprendimiento personal, un proyecto para una empresa, es parte del programa de vinculación con empresas del posgrado?
-	\item ¿Existen o aplican condiciones especiales al proyecto, financiamiento de algún programa público o privado, acuerdos de confidencialidad, acuerdos sobre la propiedad intelectual de los entregables u otros?
-	\item ¿Cómo se compara la solución propuesta con el estado del arte en el campo de aplicación? ¿En qué aspectos destaca?
-	\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-	\item ¿En qué estado del ciclo de vida está la solución que se propone?
-	\item ¿Cuáles son las características del cliente (el adoptante de los entregables del proyecto) qué valora, qué necesita?
-	\item ¿Por dónde pasa la innovación?
-\end{itemize}
-
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema} y descripción funcional de la solución propuesta.
-
-Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''.  La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+Adicinalmente, se busca dividir esta funcionalidad en varios servicios REST 
+(Representational State Transfer Protocol - Protocolo de Transferencia de Estado Representacional) 
+para que la aplicación de Critical Match pueda acceder a las funciones de generación de contenido de forma remota. 
+Esto permitirá a los organizadores de las mesas de rol acceder a las capacidades de la IA, 
+integrando de manera transparente la ambientación narrativa generada en sus partidas y facilitando la creación de un mundo de ficción coherente y atractivo para los jugadores. 
+Se prevé que la Inteligencia Artificial se aloje en un servidor que sea accesible a través de peticiones REST (Figura \ref{fig:diagBloques}). 
+Esto implica que el sistema de IA estará desplegado en un servidor remoto que estará constantemente en línea y disponible por el protocolo previamente mencionado.
 
 \begin{figure}[htpb]
 \centering 
@@ -144,23 +152,19 @@ Las figuras se deben mencionar en el texto ANTES de que aparezcan con una frase 
 \caption{Diagrama en bloques del sistema}
 \label{fig:diagBloques}
 \end{figure}
-
 \vspace{25px}
 
-El tamaño de la tipografía en TODAS las figuras debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama, preferentemente en la gama de colores pastel.
-\end{consigna}
+En resumen, la propuesta de valor de este proyecto es la implementación de una serie de servicios REST que serán accedidos por aplicaciones externas, 
+principalmente Critical Match. Estos servicios permitirán la generación de elementos de ambientación narrativa, basados en el contexto del mundo proporcionado por los usuarios. 
+Esta iniciativa supone una evolución natural de la App Critical Match. 
+Actualmente el producto dispone de la funcionalidad de crear mesas y reunir jugadores y esta propuesta añade valor al facilitar a los organizadores de las partidas la creación de contenido atractivo para todos los participantes. 
+Además, este proyecto podría encajar en otros ámbitos que actualmente están enfocados en el “World Building” al proporcionar a creadores de mundos y escritores herramientas para expandir sus ideas. 
+Este proyecto a su vez es escalable y permite añadir nuevos servicios con el paso del tiempo. 
+Esto podría llevar en un futuro a la posibilidad de ofrecer un director de juego automatizado por Inteligencia Artificial que sea de interpretar las reglas y acciones de sus jugadores, 
+llevando a cabo partidas de rol de manera autónoma.
 
 \section{2. Identificación y análisis de los interesados}
 \label{sec:interesados}
-
-\begin{consigna}{red} % este comando se debe borrar para la entrega, junto con la contraparte \end{consigna}{red} 
- 
-\textbf{Nota importante:} borrar esto y todas las consignas en color rojo antes de entregar este documento). Esto se hace eliminando el par de comandos que forman el bloque consigna, \verb!\begin{consigna}{red}! y \verb!\end{consigna}{red}! del código. 
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos. Si se considera que una persona cumple dos o más roles, entonces solo dejarla en el rol más importante. 
-
-Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente. Si una persona es el Responsable, no debe ser colocado también como miembro del equipo.
-
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -169,75 +173,64 @@ Por ejemplo, si una persona es Cliente pero también colabora u orienta, dejarla
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &                   &              	&        	\\ \hline
-Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Cliente       & \clientename      &\empclientename	& co-fundador de Critical Match       	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &                   &              	&        	\\ \hline
-Orientador    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Director    & \supname	      & \pertesupname 	& Director Trabajo final \\ \hline
+Usuario final & \clientename      &\empclientename	& co-fundador de Critical Match       	\\ \hline
 \end{tabularx}
 \end{table}
-
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Es deseable listar a continuación las principales características de cada interesado.
  
-Por ejemplo:
+De esta lista podemos destacar:
 \begin{itemize}
-	\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-	\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-	\item Orientador: María Gómez va a poder ayudar mucho con la definición de los requerimientos.
+	\item Cliente y usuario final: \clientename.
+	Aporta contexto necesario sobre la App Critical Match e interesado de las herramientas que se desarrollarán en el proyecto.
+	Punto de contacto entre el responsable del proyecto y el equipo de Critical Match.
 \end{itemize}
-
-\end{consigna} % este comando se debe borrar para la entrega, junto con la contraparte \begin{consigna}{red}
-
-
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
-
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
-\end{consigna}
+El propósito del proyecto es el desarrollo de un servidor web que aloje una Inteligencia Artificial de tipo LLM. 
+Esta IA será entrenada para la generación de contexto y contenido narrativo.
+El servidor podrá recibir peticiones a través del protocolo HTTP-REST, 
+donde se alimentará a la IA con un contexto narrativo.
+El servidor responderá las peticiones con la salida aportada por el modelo 
+dependiendo de la entrada de texto y el tipo de servicio solicitado
+\newpage
 
 \section{4. Alcance del proyecto}
 \label{sec:alcance}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+El alcance del proyecto incluye lo siguiente:
+\begin{itemize}
+	\item Desarrollo de un servidor web.
+	\item Entrenamiento de una Inteligencia Artificial de tipo LMM.
+	\item Análisis y tratamiento de los datos utilizados para el entrenamiento de la IA.
+	\item La integración de un conjunto esencial de servicios REST.
+	\item Servicios adicionales, si entran dentro de las horas estimadas del proyecto.
+\end{itemize}
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+El alcance del proyecto no incluye:
+\begin{itemize}
+	\item Página web.
+	\item Securización del servidor web ni de ninguno de sus servicios REST.
+	\item Rendimiento de los servicios que garanticen tiempos de respuesta cercanos a tiempo real.
+\end{itemize}
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
-
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
-
-\end{consigna}
-
+En resumen, el proyecto consistirá de un prototipo que aporte funcionalidad en un tiempo de respuesta razonable, 
+pero es posible que no se ajuste a los requerimientos de un sistema puesto en producción.
+Con esto aclarado, la intención siempre será desarrollar el proyecto aportando el mayor rendimiento posible.
 
 \section{5. Supuestos del proyecto}
 \label{sec:supuestos}
-
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+Para el desarrollo del presente proyecto se supone que:
 
 \begin{itemize}
-	\item Supuesto 1
-	\item Supuesto 2...
+	\item No se desarrollará la Inteligencia Artificial desde cero, si no que se utilizará una pre-entrenada y de código abierto.
+	Partiendo de esa base, se hara un proceso de 'fine-tuning' para especializar el modelo en los servicios de generación de contenido narrativo.
+	\item No se dispone de un set de datos por parte del cliente. 
+	Se analizarán sets de datos con licencia abierta en la red y se emplearán aquellos que se ajusten al proyecto.
+	\item Comunicación con el Equipo de Critical Match para seguimiento del proyecto y aportación de ideas.
 \end{itemize}
-
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
-\end{consigna}
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
