@@ -1,0 +1,222 @@
+<mxfile host="app.diagrams.net" modified="2023-11-15T06:06:55.507Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="UuT6p7YCqPZXo7EyOTB7" version="22.1.1" type="device">
+  <diagram id="07fea595-8f29-1299-0266-81d95cde20df" name="Page-1">
+    <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-220" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-218" target="9_SkFMOBv_yLP_4SJoIF-219" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-218" value="INICIO" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="10" y="20" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-222" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-219" target="9_SkFMOBv_yLP_4SJoIF-221" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-219" value="3.1 Plan de proyecto&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="10" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-268" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-221" target="9_SkFMOBv_yLP_4SJoIF-223" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-269" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-221" target="9_SkFMOBv_yLP_4SJoIF-230" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-221" value="3.2 Presentacion del plan de proyecto&lt;br&gt;t=10" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-254" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-223" target="9_SkFMOBv_yLP_4SJoIF-224" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-223" value="1.1 Desarrollo inicial del servidor web y página principal&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="340" y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-248" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-224" target="9_SkFMOBv_yLP_4SJoIF-231" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="260" as="sourcePoint" />
+            <mxPoint x="410" y="281" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-253" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-231" target="9_SkFMOBv_yLP_4SJoIF-235" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="316" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-224" value="1.2 Implementación del modelo de datos y ORM&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="340" y="195" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-259" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-225" target="9_SkFMOBv_yLP_4SJoIF-226" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-225" value="1.3 Implementación de pruebas automáticas&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="550" y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-226" target="9_SkFMOBv_yLP_4SJoIF-236" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="140" />
+              <mxPoint x="1010" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-226" target="9_SkFMOBv_yLP_4SJoIF-242" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="880" y="120" />
+              <mxPoint x="1110" y="120" />
+              <mxPoint x="1110" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-226" value="1.4 Validación de pruebas automáticas&lt;br&gt;t=10" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="740" y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-265" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-227" target="9_SkFMOBv_yLP_4SJoIF-233" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-227" value="1.5 Implementación del comando para reentrenar el módulo LLM&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="542.5" y="370" width="155" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-258" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-228" target="9_SkFMOBv_yLP_4SJoIF-225" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-228" value="1.6 Implementación de los servicios API REST del paquete MVP&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="550" y="195" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-292" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-229" target="9_SkFMOBv_yLP_4SJoIF-242" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-229" value="1.7 Implementación de servicios REST adicionales&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="340" y="470" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-247" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-230" target="9_SkFMOBv_yLP_4SJoIF-224" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-285" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-230" target="9_SkFMOBv_yLP_4SJoIF-243" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-230" value="2.1 Obtención y análisis inicial del &lt;i&gt;dataset&lt;/i&gt;&lt;br&gt;t=25" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="140" y="195" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-251" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#e3c800;strokeColor=#B09500;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="409.5" y="351" as="sourcePoint" />
+            <mxPoint x="409.5" y="375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-231" value="2.2 Desarrollo del software necesario para el tratamiento de los datos&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="330" y="281" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-264" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-232" target="9_SkFMOBv_yLP_4SJoIF-227" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="405" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-232" value="2.3 Implementar &lt;i&gt;pipeline&lt;/i&gt; de procesamiento del&amp;nbsp;&lt;i&gt;dataset&lt;/i&gt;&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="330" y="375" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-266" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e3c800;strokeColor=#B09500;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-233" target="9_SkFMOBv_yLP_4SJoIF-236" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-233" value="2.4 &lt;i&gt;Fine-tuning&amp;nbsp;&lt;/i&gt;del módulo LLM inicial&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="740" y="195" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-234" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="435" as="sourcePoint" />
+            <mxPoint x="440" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-257" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-235" target="9_SkFMOBv_yLP_4SJoIF-228" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-235" value="2.5 Implementación de los métodos del módulo LLM para el paquete MVP&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="540" y="281" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-286" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-236" target="9_SkFMOBv_yLP_4SJoIF-238" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-236" value="2.6 Presentación al cliente y análisis inicial de los resultados&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="940" y="195" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-287" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-238" target="9_SkFMOBv_yLP_4SJoIF-239" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-238" value="2.7 Mejora del&amp;nbsp;&lt;i&gt;pipeline&lt;/i&gt; de procesamiento del&amp;nbsp;&lt;i&gt;dataset&lt;/i&gt;&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="930" y="286" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-288" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-239" target="9_SkFMOBv_yLP_4SJoIF-240" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-239" value="2.8&amp;nbsp;&lt;i&gt;Fine-tuning final&amp;nbsp;&lt;/i&gt;del módulo LLM&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="940" y="375" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-289" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-240" target="9_SkFMOBv_yLP_4SJoIF-244" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-290" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-240" target="9_SkFMOBv_yLP_4SJoIF-241" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-240" value="2.9 Presentación al cliente y análisis final de los resultados&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="940" y="470" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-291" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-241" target="9_SkFMOBv_yLP_4SJoIF-229" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-241" value="2.10 Implementación de métodos del modulo LLM adicionales&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="552.5" y="470" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-283" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-242" target="9_SkFMOBv_yLP_4SJoIF-246" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-242" value="3.3 Manual de administrador&lt;br&gt;t=10" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="340" y="660" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-281" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-243" target="9_SkFMOBv_yLP_4SJoIF-245" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-243" value="3.4 Documento de análisis del &lt;i&gt;dataset&lt;/i&gt;&lt;br&gt;t=25" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="470" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-284" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-244" target="9_SkFMOBv_yLP_4SJoIF-245" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="590" />
+              <mxPoint x="610" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-244" value="3.5 Recopilación de informes de seguimiento del módulo LLM&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="930" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-282" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-245" target="9_SkFMOBv_yLP_4SJoIF-246" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-245" value="3.6 Memoria técnica&lt;br&gt;t=40" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-271" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e51400;strokeColor=#B20000;" parent="1" source="9_SkFMOBv_yLP_4SJoIF-246" target="9_SkFMOBv_yLP_4SJoIF-267" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-246" value="3.7 Presentación y defensa del trabajo final&lt;br&gt;t=20" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="140" y="660" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-267" value="FIN" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="20" y="670" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-294" value="Documentación" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="750" y="30" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-299" value="Servidor web" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="870" y="30" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-300" value="Modulo LLM" style="whiteSpace=wrap;shadow=0;fontFamily=Helvetica;fontStyle=0;html=1;fontSize=12;spacing=6;verticalAlign=middle;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="990" y="30" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9_SkFMOBv_yLP_4SJoIF-301" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="730" y="10" width="379" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

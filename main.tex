@@ -4,7 +4,7 @@
 ]{Clases/charter} 
 
 
-
+\usepackage{eurosym}
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
 \titulo{Aplicaciones de modelos de lenguaje de Inteligencia Artificial (LLM) en la ambientación narrativa} 
@@ -67,10 +67,11 @@
 	\begin{tabularx}{\linewidth}{@{}|c|X|c|@{}}
 		\hline
 		\rowcolor[HTML]{C0C0C0}
-		Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados}           & Fecha                   \\ \hline
-		0        & Creación del documento                                                                    & \fechaInicioName        \\ \hline
-		1        & Se completa hasta el punto 5 inclusive                                                    & 31 de octubre de 2023   \\ \hline
-		2        & Aplicadas correcciones sobre la versión anterior y se completa hasta el punto 9 inclusive & 31 de noviembre de 2023 \\ \hline
+		Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados}            & Fecha                   \\ \hline
+		0        & Creación del documento                                                                     & \fechaInicioName        \\ \hline
+		1        & Se completa hasta el punto 5 inclusive                                                     & 31 de octubre de 2023   \\ \hline
+		2        & Aplicadas correcciones sobre la versión anterior y se completa hasta el punto 9 inclusive  & 7 de noviembre de 2023  \\ \hline
+		3        & Aplicadas correcciones sobre la versión anterior y se completa hasta el punto 12 inclusive & 15 de noviembre de 2023 \\ \hline
 		%		  Se puede agregar algo más \newline
 		%		  En distintas líneas \newline
 		%		  Así                                                    & dd/mm/aaaa \\ \hline
@@ -91,8 +92,10 @@
 \end{flushright}
 
 \vspace{2cm}
-
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en la implementación de un servidor web que aloje una Inteligencia Artificial de tipo LLM que genere contenido narrativo a través de servicios REST, y tendrá un presupuesto preliminar estimado de 610 h (+ 80h opcionales) de trabajo y \textcolor{red}{\$0}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'',
+consistirá esencialmente en la implementación de un servidor web que aloje una Inteligencia Artificial de tipo LLM que genere contenido narrativo a través de servicios REST,
+y tendrá un presupuesto preliminar estimado de 695 h (de las cuales 80h son opcionales) de trabajo y \$5.396.529,2 (del cual \$551.020,8 es el coste de las horas opcionales),
+con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -178,11 +181,10 @@ llevando a cabo partidas de rol de manera autónoma.
 	\begin{tabularx}{\linewidth}{@{}|l|X|X|l|@{}}
 		\hline
 		\rowcolor[HTML]{C0C0C0}
-		Rol           & Nombre y Apellido & Organización    & Puesto                        \\ \hline
-		Cliente       & \clientename      & \empclientename & co-fundador de Critical Match \\ \hline
-		Responsable   & \authorname       & FIUBA           & Alumno                        \\ \hline
-		Director      & \supname          & \pertesupname   & Director Trabajo final        \\ \hline
-		Usuario final & \clientename      & \empclientename & co-fundador de Critical Match \\ \hline
+		Rol         & Nombre y Apellido & Organización    & Puesto                        \\ \hline
+		Cliente     & \clientename      & \empclientename & co-fundador de Critical Match \\ \hline
+		Responsable & \authorname       & FIUBA           & Alumno                        \\ \hline
+		Director    & \supname          & \pertesupname   & Director Trabajo final        \\ \hline
 	\end{tabularx}
 \end{table}
 
@@ -238,39 +240,38 @@ Para el desarrollo del presente proyecto se supone que:
 	      Se analizarán sets de datos con licencia abierta en la red y se emplearán aquellos que se ajusten al proyecto.
 	\item Comunicación fluida con el Equipo de Critical Match para seguimiento del proyecto y aportación de ideas.
 	\item El proyecto se realizará con una máquina cuyas especificaciones permitan tanto el desarrollo del código como su ejecución, además del proceso de \textit{fine-tuning} de la Inteligencia artificial.
-	      Se estima un presupuesto mínimo de la máquina de 1500\$
-	\item La disponibilidad para realizar las tareas del proyecto, las cuales se describirán más adelante, será de entre 20 y 30 horas semanales
+	\item La disponibilidad para realizar las tareas del proyecto, las cuales se describirán más adelante, será de entre 20 y 30 horas semanales.
 \end{itemize}
 
 
 \section{6. Requerimientos}
 \label{sec:requerimientos}
 \begin{enumerate}
-	\item Requerimientos del servidor
+	\item Requerimientos del servidor:
 	      \begin{enumerate}
 		      \item El servidor debe alojar y administrar la información relativa al \textit{dataset} y la configuración del modelo LLM.
 		      \item El servidor debe contar con los procesos necesarios para entrenar la Inteligencia Artificial.
 		      \item Al ser desplegado, el servidor deberá desplegar el módulo LLM y utilizarlo en el procesamiento de peticiones entrantes.
-		      \item El servidor debe dar acceso a clientes externos a traves del protocolo API REST.
+		      \item El servidor debe dar acceso a clientes externos a través del protocolo API REST.
 		      \item Los servicios REST deben aceptar entrada de texto en varios formatos: pdf, txt, word o texto plano en el cuerpo de la petición.
 		      \item Los servicios REST devolverán la respuesta en formato simple HTML para su cómoda visualización en un navegador.
 		      \item El prototipo del servidor debe de tener una disponibilidad del 100\% durante las pruebas y aceptar la carga de trabajo de peticiones individuales.
 		            Opcionalmente, sería deseable que maneje el mayor número de peticiones simultáneas posible.
 	      \end{enumerate}
-	\item Requerimientos del módulo LLM
+	\item Requerimientos del módulo LLM:
 	      \begin{enumerate}
 		      \item El módulo LLM debe aceptar entrada de texto y generar texto como salida.
 		      \item El módulo LLM, si el texto de entrada es legible, debe aportar una respuesta con un detalle y profundidad razonables,
 		            además de ser coherente con las instrucciones recibidas.
-		      \item El módulo debe disponer de multiples metodos para los cuales, dada la misma entrada de texto, devolverá información enfocada en un aspecto concreto de la narrativa.
+		      \item El módulo debe disponer de múltiples métodos para los cuales, dada la misma entrada de texto, devolverá información enfocada en un aspecto concreto de la narrativa.
 		            Por ejemplo, un método centrado en la generación de personajes, otro en la descripción de localizaciones, un tercero de eventos y así sucesivamente.
 		      \item El tiempo de respuesta del módulo LLM debe estar, teniendo en cuenta el \textit{hardware} con el que se dispone, la extensión del texto de entrada y que no se garantiza un rendimiento cercano a tiempo real,
-		            en un rango de tiempo razonable para un servicio REST (No más de 5 minutos\textcolor{red}{-desconozco si es un rango de tiempo realista-}).
+		            en un rango de tiempo razonable para un servicio REST (no más de 5 minutos\textcolor{red}{-desconozco si es un rango de tiempo realista-}).
 	      \end{enumerate}
-	\item Requerimiento de testing
+	\item Requerimiento de testing:
 	      \begin{enumerate}
 		      \item El proyecto contará con test automáticos que probarán el correcto funcionamiento de los módulos no relacionados con el modelo LLM.
-		      \item El cliente podrá validar los test automáticos a través de un analisis del código.
+		      \item El cliente podrá validar los test automáticos a través de un análisis del código.
 		      \item Se validará con el cliente tanto el módulo LLM como el servidor.
 	      \end{enumerate}
 	\item Requerimientos de documentación:
@@ -280,7 +281,7 @@ Para el desarrollo del presente proyecto se supone que:
 		            Este documento también recopilará las instrucciones de despliegue con la creación del entorno virtual, instalación de librerías y el entrenamiento del modelo, entre otros.
 		      \item Se entregará un documento con un breve análisis de los resultados del módulo LLM que se hayan expuesto al cliente durante las reuniones de seguimiento.
 	      \end{enumerate}
-	\item Requerimientos legales
+	\item Requerimientos legales:
 	      \begin{enumerate}
 		      \item Cualquier información del cliente que se utilice en el desarrollo del proyecto estará amparada por derechos de privacidad y propiedad intelectual.
 		      \item El set de datos utilizado para el entrenamiento del módulo LLM debe tener una licencia libre o que se ajuste a uso académico.
@@ -292,18 +293,18 @@ Para el desarrollo del presente proyecto se supone que:
 \section{7. Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 A las historias de usuario se les asignará una puntuación (\textit{Story Points}) que seguirá la sucesión de Fibonnaci en un rango de 1 a 13 en función de la dificultad.
-A mayor dificultad más tiempo de desarrollo se le dedicará a la historia de usuario, y mayores serán los riesgos que acarrea.
+A mayor dificultad más tiempo de desarrollo se le dedicará a la historia de usuario y mayores serán los riesgos que acarrea.
 
-A continuación, se decriben brevemente los roles:
+A continuación, se describen brevemente los roles:
 \begin{itemize}
-	\item Administrador: Persona o equipo encargado de, sin necesidad de tener conocimiento del código, controlar y monitorizar el estado del sistema en producción.
-	\item Desarrollador: Persona o equipo con conocimientos de análisis de datos y/o programación encargado de mantener el software.
-	\item Usuario: Conjunto de personas interesadas en consumir el producto que ofrece el sistema.
+	\item Administrador: persona o equipo encargado de, sin necesidad de tener conocimiento del código, controlar y monitorizar el estado del sistema en producción.
+	\item Desarrollador: persona o equipo con conocimientos de análisis de datos y/o programación encargado de mantener el software.
+	\item Usuario: conjunto de personas interesadas en consumir el producto que ofrece el sistema.
 \end{itemize}
 
 La lista de historias de usuario es la siguiente:
 \begin{itemize}
-	\item Como administrador quiero contar con un servidor web y con las herramientas necesarias para su despligue y detención. (2 puntos)
+	\item Como administrador quiero contar con un servidor web y con las herramientas necesarias para su despliegue y detención. (2 puntos)
 	\item Como desarrollador deseo tener herramientas que comprueben el buen funcionamiento del código. (5 puntos)
 	\item Como desarrollador necesito ser capaz de actualizar el \textit{dataset} y reentrenar la inteligencia artificial. (8 puntos)
 	\item Como usuario quiero enviar peticiones API REST al servidor y, aportando un contexto inicial, obtener ambientación narrativa relativa al servicio que he solicitado. (13 puntos)
@@ -325,12 +326,12 @@ La lista de historias de usuario es la siguiente:
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 \begin{enumerate}
-	\item Tareas del servidor (200 h)
+	\item Tareas del servidor (190 h)
 	      \begin{enumerate}
-		      \item Desarollo inicial del servidor web y página principal. (20 h)
+		      \item Desarrollo inicial del servidor web y página principal. (20 h)
 		      \item Implementación del modelo de datos y ORM (\textit{Object-Relational Mapping}). (40 h)
 		      \item Implementación de pruebas automáticas. (40 h)
-		      \item Validación de pruebas automáticas. (20 h)
+		      \item Validación de pruebas automáticas. (10 h)
 		      \item Implementación del comando para reentrenar el módulo LLM. (20 h)
 		      \item Implementación de los servicios API REST del paquete MVP (\textit{Minimum Viable Product} o Producto Viable Mínimo). (20 h)
 		      \item Opcional. Implementación de servicios REST adicionales. (40 h)
@@ -348,168 +349,100 @@ La lista de historias de usuario es la siguiente:
 		      \item Presentación al cliente y análisis final de los resultados. (20 h)
 		      \item Opcional. Implementación de métodos del módulo LLM adicionales. (40 h)
 	      \end{enumerate}
-	\item Tareas de documentación (130 h)
+	\item Tareas de documentación (145 h)
 	      \begin{enumerate}
+		      \item Plan de proyecto. (20h)
+		      \item Presentación del plan de proyecto. (10h)
 		      \item Manual de administrador. (10h)
-		      \item Documento de análisis del \textit{dataset}. (40 h)
+		      \item Documento de análisis del \textit{dataset}. (25 h)
 		      \item Recopilación de informes de seguimiento del módulo LLM. (20 h)
 		      \item Memoria técnica. (40 h)
-		      \item Presentación y defensa del trabajo final (20 h)
+		      \item Presentación y defensa del trabajo final. (20 h)
 	      \end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (690 h, de las cuales 80 h son opcionales)
+Cantidad total de horas: 695 h, de las cuales 80 h son opcionales.
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
+A continuación se presenta en la figura \ref{fig:AoN} el diagrama de \textit{Activity on Node} de las tareas del proyecto.
 
-\begin{consigna}{red}
-	Armar el AoN a partir del WBS definido en la etapa anterior.
-
-	%La figura \ref{fig:AoN} fue elaborada con el paquete latex tikz y pueden consultar la siguiente referencia \textit{online}:
-
-	%\url{https://www.overleaf.com/learn/latex/LaTeX_Graphics_using_TikZ:_A_Tutorial_for_Beginners_(Part_3)\%E2\%80\%94Creating_Flowcharts}
-
-\end{consigna}
-
+En la leyenda se indica el color de cada grupo de tareas.
+Además, se puede diferenciar el camino crítico en rojo, los caminos semicríticos en amarillo y los caminos opcionales en línea discontinua.
+El valor del tiempo de cada tarea está en horas.
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=.8\textwidth]{./Figuras/AoN.png}
+	\includegraphics[width=.75\paperwidth]{./Figuras/AoN.png}
 	\caption{Diagrama de \textit{Activity on Node}.}
 	\label{fig:AoN}
 \end{figure}
 
-Indicar claramente en qué unidades están expresados los tiempos.
-De ser necesario indicar los caminos semicríticos y analizar sus tiempos mediante un cuadro.
-Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color, como se muestra en el siguiente ejemplo:
-
-
-
 \section{11. Diagrama de Gantt}
+En la figura \ref{fig:diagGantt} se presenta el diagrama de Gantt del proyecto.
+Al solo disponer de una persona trabajando en el proyecto, las tareas no pueden paralelizarse y están dispuestas en cascada.
+Cada día equivale a 4 horas de trabajo en el proyecto de acuerdo a lo descrito en la sección \ref{sec:supuestos}
+
+Además, las tareas opcionales no aparecen para no desvirtuar el diagrama estimado.
+En caso de aplicarse estos objetivos secundarios, se enviará una actualizacion de dicho diagrama a los interesados.
+
 \label{sec:gantt}
-
-\begin{consigna}{red}
-
-	Existen muchos programas y recursos \textit{online} para hacer diagramas de Gantt, entre los cuales destacamos:
-
-	\begin{itemize}
-		\item Planner
-		\item GanttProject
-		\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
-		\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
-		\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
-	\end{itemize}
-
-	Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible.
-	Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
-
-	Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
-	Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
-	Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
-
-	En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de Gantt realizado con el paquete de \textit{pgfgantt}. En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
-
-	\begin{figure}[htbp]
-		\begin{center}
-			\begin{ganttchart}{1}{12}
-				\gantttitle{2020}{12} \\
-				\gantttitlelist{1,...,12}{1} \\
-				\ganttgroup{Group 1}{1}{7} \\
-				\ganttbar{Task 1}{1}{2} \\
-				\ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-				\ganttmilestone{Milestone o hito}{7} \ganttnewline
-				\ganttbar{Final Task}{8}{12}
-				\ganttlink{elem2}{elem3}
-				\ganttlink{elem3}{elem4}
-			\end{ganttchart}
-		\end{center}
-		\caption{Diagrama de Gantt de ejemplo}
-		\label{fig:gantt}
+\begin{landscape}
+	\begin{figure}[htpb]
+		\centering
+		\includegraphics[height=.67\textheight]{./Figuras/Gantt-2.png}
+		\caption{Diagrama de Gantt.}
+		\label{fig:diagGantt}
 	\end{figure}
-
-
-	\begin{landscape}
-		\begin{figure}[htpb]
-			\centering
-			\includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
-			\caption{Ejemplo de diagrama de Gantt rotado}
-			\label{fig:diagGantt}
-		\end{figure}
-
-	\end{landscape}
-
-\end{consigna}
-
-
+\end{landscape}
 \section{12. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
+Para el cómputo del valor de las horas de ingeniería se ha tomado como referencia el salario medio de un ingeniero software en españa en el año 2023, cuyo valor es de \euro18,08 por hora.
+Dicho valor se ha convertido a pesos argentinos bajo la tasa representativa del mercado del día 14/11/2023, una equivalencia de 380,96 pesos por euro.
+Es decir, el valor del trabajo de ingeniería es de \$6.887,76 por hora.
 
-\begin{consigna}{red}
-	Si el proyecto es complejo entonces separarlo en partes:
-	\begin{itemize}
-		\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
-		\item El desglose detallado del subtotal de cada una de las áreas.
-	\end{itemize}
-
-	IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
-
-\end{consigna}
+También se utilizara el valor de conversión de euros a pesos para la estimación del coste del \textit{hardware} de trabajo.
 
 \begin{table}[htpb]
 	\centering
 	\begin{tabularx}{\linewidth}{@{}|X|c|r|r|@{}}
 		\hline
 		\rowcolor[HTML]{C0C0C0}
-		\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS DIRECTOS}   \\ \hline
+		\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS DIRECTOS}       \\ \hline
 		\rowcolor[HTML]{C0C0C0}
-		Descripción                                                 &
-		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad}       &
-		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
-		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total}        \\ \hline
-		                                                            &
-		\multicolumn{1}{c|}{}                                       &
-		\multicolumn{1}{c|}{}                                       &
-		\multicolumn{1}{c|}{}                                           \\ \hline
-		                                                            &
-		\multicolumn{1}{c|}{}                                       &
-		\multicolumn{1}{c|}{}                                       &
-		\multicolumn{1}{c|}{}                                           \\ \hline
-		\multicolumn{1}{|l|}{}                                      &
-		                                                            &
-		                                                            &
-		\\ \hline
-		\multicolumn{1}{|l|}{}                                      &
-		                                                            &
-		                                                            &
-		\\ \hline
-		\multicolumn{3}{|c|}{SUBTOTAL}                              &
-		\multicolumn{1}{c|}{}                                           \\ \hline
+		Descripción                                                       &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad}             &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario (ARS)} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total (ARS)}      \\ \hline
+		Horas del Responsable (MVP)                                       &
+		\multicolumn{1}{c|}{615}                                          &
+		\multicolumn{1}{c|}{6.887,76}                                     &
+		\multicolumn{1}{c|}{4.235.972,4}                                    \\ \hline
+		Horas del Responsable (Opcional)                                  &
+		\multicolumn{1}{c|}{80}                                           &
+		\multicolumn{1}{c|}{6.887,76}                                     &
+		\multicolumn{1}{c|}{551.020,8}                                      \\ \hline
+
+		\multicolumn{3}{|c|}{SUBTOTAL}                                    &
+		\multicolumn{1}{c|}{4.786.993,2}                                    \\ \hline
 		\rowcolor[HTML]{C0C0C0}
-		\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
+		\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS}     \\ \hline
 		\rowcolor[HTML]{C0C0C0}
-		Descripción                                                 &
-		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad}       &
-		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
-		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total}        \\ \hline
-		\multicolumn{1}{|l|}{}                                      &
-		                                                            &
-		                                                            &
-		\\ \hline
-		\multicolumn{1}{|l|}{}                                      &
-		                                                            &
-		                                                            &
-		\\ \hline
-		\multicolumn{1}{|l|}{}                                      &
-		                                                            &
-		                                                            &
-		\\ \hline
-		\multicolumn{3}{|c|}{SUBTOTAL}                              &
-		\multicolumn{1}{c|}{}                                           \\ \hline
+		Descripción                                                       &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad}             &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario (ARS)} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total (ARS)}      \\ \hline
+		Hardware de trabajo                                               &
+		\multicolumn{1}{c|}{1}                                            &
+		\multicolumn{1}{c|}{609.536}                                      &
+		\multicolumn{1}{c|}{609.536}                                        \\ \hline
+		\multicolumn{3}{|c|}{SUBTOTAL}                                    &
+		\multicolumn{1}{c|}{609.536}                                        \\ \hline
 		\rowcolor[HTML]{C0C0C0}
-		\multicolumn{3}{|c|}{TOTAL}                                 &
-		\\ \hline
+		\multicolumn{3}{|c|}{TOTAL}                                       &
+		\multicolumn{1}{c|}{5.396.529,2}                                    \\ \hline
 	\end{tabularx}%
 \end{table}
 
+Se aclara de nuevo que \$551.020,8 del coste total se atribuyen a costes opcionales en caso de que se decida añadir funcionalidad adicional.
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
