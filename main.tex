@@ -40,7 +40,7 @@
  
 \fechaINICIO{17 de octubre de 2023}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlan{5 de diciembre de 2023} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{Por ser definido}	%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{agosto de 2024}	%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -73,6 +73,7 @@
 		2        & Aplicadas correcciones sobre la versión anterior y se completa hasta el punto 9 inclusive  & 7 de noviembre de 2023  \\ \hline
 		3        & Aplicadas correcciones sobre la versión anterior y se completa hasta el punto 12 inclusive & 15 de noviembre de 2023 \\ \hline
 		4        & Aplicadas correcciones sobre la versión anterior y se completa el plan en su totalidad     & 23 de noviembre de 2023 \\ \hline
+		5        & Aplicadas correcciones sobre la versión anterior                                           & 3 de diciembre de 2023  \\ \hline
 	\end{tabularx}
 \end{table}
 
@@ -378,7 +379,7 @@ Al solo disponer de una persona trabajando en el proyecto, las tareas no pueden 
 Cada día equivale a 4 horas de trabajo en el proyecto de acuerdo a lo descrito en la sección \ref{sec:supuestos}.
 
 Además, las tareas opcionales no aparecen para no desvirtuar el diagrama estimado.
-En caso de aplicarse estos objetivos secundarios, se enviará una actualizacion de dicho diagrama a los interesados.
+En caso de aplicarse estos objetivos secundarios, se enviará una actualización de dicho diagrama a los interesados.
 
 \label{sec:gantt}
 \begin{landscape}
@@ -395,7 +396,7 @@ Para el cómputo del valor de las horas de ingeniería se ha tomado como referen
 Dicho valor se ha convertido a pesos argentinos bajo la tasa representativa del mercado del día 14/11/2023, una equivalencia de 380,96 pesos por euro.
 Es decir, el valor del trabajo de ingeniería es de \$6.887,76 por hora.
 
-También se utilizara el valor de conversión de euros a pesos para la estimación del coste del \textit{hardware} de trabajo.
+También se utilizará el valor de conversión de euros a pesos para la estimación del coste del \textit{hardware} de trabajo.
 
 \begin{table}[htpb]
 	\centering
@@ -444,57 +445,57 @@ Se aclara de nuevo que \$551.020,8 del coste total se atribuyen a costes opciona
 \label{sec:riesgos}
 a) Se identificaron los siguientes riesgos para el proyecto:
 
-Riesgo 1: No disponer de un modelo de tipo LLM preentrenado que sea adecuado para el proyecto.
+Riesgo 1: no disponer de un modelo de tipo LLM pre entrenado que sea adecuado para el proyecto.
 \begin{itemize}
-	\item Severidad (S): Se trata de un riesgo crítico ya que la ausencia de un modelo supondría la imposibilidad de realizar el proyecto. (10)
-	\item Ocurrencia (O): La probabilidad de ocurrencia es baja porque hay múltiples opciones disponibles. (3)
+	\item Severidad (S): 10. Se trata de un riesgo crítico ya que la ausencia de un modelo supondría la imposibilidad de realizar el proyecto.
+	\item Ocurrencia (O): 3. La probabilidad de ocurrencia es baja porque hay múltiples opciones disponibles.
 \end{itemize}
 
-Riesgo 2: \textit{Dataset} inadecuado para el \textit{fine-tuning} del modelo.
+Riesgo 2: \textit{dataset} inadecuado para el \textit{fine-tuning} del modelo.
 \begin{itemize}
-	\item Severidad (S): Se trata de un riesgo severo ya que un entrenamiento inadecuado del modelo induciría a resultados insuficientes para el cliente. (8)
-	\item Probabilidad de ocurrencia (O): La probabilidad de ocurrencia es media debido a varios factores.
+	\item Severidad (S): 8. Se trata de un riesgo severo ya que un entrenamiento inadecuado del modelo induciría a resultados insuficientes para el cliente.
+	\item Probabilidad de ocurrencia (O): 5. La probabilidad de ocurrencia es media debido a varios factores.
 	      Es necesario encontrar un \textit{dataset} lo suficientemente completo para empezar a procesarlo.
 	      Además, no se dispone de conocimiento pleno a la hora de tratar adecuadamente con datos de esta naturaleza.
-	      Se supone que se adquirirá experiencia en el desarrollo del curso de especialización. (5)
+	      Se supone que se adquirirá experiencia en el desarrollo del curso de especialización.
 \end{itemize}
 
 \pagebreak
 
-Riesgo 3: Capacidad \textit{hardware} insuficiente.
+Riesgo 3: capacidad del \textit{hardware} insuficiente.
 \begin{itemize}
-	\item Severidad (S): La severidad del riesgo es media porque provocaría retrasos en los tiempos de \textit{fine-tuning} y de predicción del modelo.
-	      Esto podría provocar retrasos en el proyecto y un rendimiento insuficiente en los servicios. (5)
-	\item Ocurrencia (O): La ocurrencia del riesgo es baja porque se cuenta con un equipo con una placa de video de buena calidad.
-	      Además, es improbable que dicho equipo se dañe o se pierda. (3)
+	\item Severidad (S): 5. La severidad del riesgo es media porque provocaría retrasos en los tiempos de \textit{fine-tuning} y de predicción del modelo.
+	      Esto podría provocar retrasos en el proyecto y un rendimiento insuficiente en los servicios.
+	\item Ocurrencia (O): 3. La ocurrencia del riesgo es baja porque se cuenta con un equipo con una placa de video de buena calidad.
+	      Además, es improbable que dicho equipo se dañe o se pierda.
 \end{itemize}
 
-Riesgo 4: Retrasos en el proyecto.
+Riesgo 4: retrasos en el proyecto.
 \begin{itemize}
-	\item Severidad (S): La severidad del riesgo es baja ya que el cliente es flexible en la extensión de los plazos. (3)
-	\item Ocurrencia (O): La ocurrencia del riesgo es alta al tratarse de un proyecto que se inicia en mitad del curso de especialización.
-	      Es posible que tanto la falta de experiencia como la carga de trabajo externa cause que no se disponga de todo el tiempo efectivo estimado para la realización del proyecto. (6)
+	\item Severidad (S): 3. La severidad del riesgo es baja ya que el cliente es flexible en la extensión de los plazos.
+	\item Ocurrencia (O): 6. La ocurrencia del riesgo es alta al tratarse de un proyecto que se inicia en mitad del curso de especialización.
+	      Es posible que tanto la falta de experiencia como la carga de trabajo externa cause que no se disponga de todo el tiempo efectivo estimado para la realización del proyecto.
 \end{itemize}
 
-Riesgo 5: Resultado final insuficiente.
+Riesgo 5: resultado final insuficiente.
 \begin{itemize}
-	\item Severidad (S): Se trata de un riesgo severo debido a que invalida gran parte de los requerimientos del proyecto. (8)
-	\item Ocurrencia (O): Existe la posibilidad de que, a pesar de trabajar correctamente con el Modelo LLM y el \textit{dataset}, el resultado final no sea esperado por el cliente.
-	      No existe una forma objetiva de ponderar el éxito del modelo. (4)
+	\item Severidad (S): 8. Se trata de un riesgo severo debido a que invalida gran parte de los requerimientos del proyecto.
+	\item Ocurrencia (O): 4. Existe la posibilidad de que, a pesar de trabajar correctamente con el Modelo LLM y el \textit{dataset}, el resultado final no sea esperado por el cliente.
+	      No existe una forma objetiva de ponderar el éxito del modelo.
 \end{itemize}
-b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
+b) Tabla de gestión de riesgos: (El RPN se calcula como RPN=SxO)
 
 \begin{table}[htpb]
 	\centering
 	\begin{tabularx}{\linewidth}{@{}|X|c|c|c|c|c|c|@{}}
 		\hline
 		\rowcolor[HTML]{C0C0C0}
-		Riesgo                                       & S  & O & RPN & S* & O* & RPN* \\ \hline
-		1. Modelo LLM inadecuado.                    & 10 & 3 & 30  & 10 & 2  & 20   \\ \hline
-		2. \textit{Dataset} inadecuado.              & 8  & 5 & 40  & 8  & 3  & 24   \\ \hline
-		3. Capacidad \textit{hardware} insuficiente. & 5  & 3 & 15  & -  & -  & -    \\ \hline
-		4. Retrasos en el proyecto.                  & 3  & 6 & 18  & -  & -  & -    \\ \hline
-		5. Resultado final insuficiente.             & 8  & 4 & 32  & 6  & 3  & 18   \\ \hline
+		Riesgo                                           & S  & O & RPN & S* & O* & RPN* \\ \hline
+		1. Modelo LLM inadecuado.                        & 10 & 3 & 30  & 10 & 2  & 20   \\ \hline
+		2. \textit{Dataset} inadecuado.                  & 8  & 5 & 40  & 8  & 3  & 24   \\ \hline
+		3. Capacidad del \textit{hardware} insuficiente. & 5  & 3 & 15  & -  & -  & -    \\ \hline
+		4. Retrasos en el proyecto.                      & 3  & 6 & 18  & -  & -  & -    \\ \hline
+		5. Resultado final insuficiente.                 & 8  & 4 & 32  & 6  & 3  & 18   \\ \hline
 	\end{tabularx}%
 \end{table}
 
@@ -504,31 +505,31 @@ Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplic
 
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
 
-Riesgo 1: No disponer de un modelo de tipo LLM preentrenado que sea adecuado para el proyecto.
+Riesgo 1: no disponer de un modelo de tipo LLM pre entrenado que sea adecuado para el proyecto.
 El plan de mitigación consiste en dedicar tiempo y recursos adicionales en la búsqueda de modelos LLM.
 Esto incluye considerar modelos en otros lenguajes de programación, siempre que se cuente con la experiencia necesaria.
 También buscar documentación online o videos de divulgación de modelos de tipo LLM.
 \begin{itemize}
-	\item  Severidad (S*): La severidad no cambia ya que la integridad del proyecto depende de un modelo LLM compatible. (10)
-	\item  Probabilidad de ocurrencia (O*): La probabilidad de ocurrencia es menor debido a los recursos adicionales empleados. (2)
+	\item  Severidad (S*): 10. La severidad no cambia ya que la integridad del proyecto depende de un modelo LLM compatible.
+	\item  Probabilidad de ocurrencia (O*): 2. La probabilidad de ocurrencia es menor debido a los recursos adicionales empleados.
 \end{itemize}
 
-Riesgo 2: \textit{Dataset} inadecuado para el \textit{fine-tuning} del modelo.
+Riesgo 2: \textit{dataset} inadecuado para el \textit{fine-tuning} del modelo.
 El plan de mitigación consiste en dedicar tiempo y recursos adicionales en la búsqueda y análisis de \textit{Dataset}.
 La redacción del documento de análisis del dataset también ayuda a mitigar el riesgo.
 \begin{itemize}
-	\item  Severidad (S*): La severidad del riesgo no cambia. (8)
-	\item  Probabilidad de ocurrencia (O*): La probabilidad de ocurrencia es menor debido a los recursos adicionales empleados. (3)
+	\item  Severidad (S*): 8. La severidad del riesgo no cambia.
+	\item  Probabilidad de ocurrencia (O*): 3. La probabilidad de ocurrencia es menor debido a los recursos adicionales empleados.
 \end{itemize}
 
-Riesgo 3: Resultado final insuficiente.
+Riesgo 3: resultado final insuficiente.
 El plan de mitigación consiste en comunicarse con el cliente para acordar criterios de evaluación del \textit{output} de los servicios que sean razonables.
 Siempre que sea posible se harán demostraciones del \textit{software} en las reuniones de seguimiento para detectar puntos de mejora antes de la finalización del proyecto.
 Los test automáticos aportarán cobertura de código en la medida de lo posible.
 
 \begin{itemize}
-	\item  Severidad (S*): La severidad baja al conocer las expectativas del cliente. (6)
-	\item  Probabilidad de ocurrencia (O*): La probabilidad de ocurrencia es menor debido a la demostración preeliminar de resultados. (3)
+	\item  Severidad (S*): 6. La severidad baja al conocer las expectativas del cliente.
+	\item  Probabilidad de ocurrencia (O*): 3. La probabilidad de ocurrencia es menor debido a la demostración preliminar de resultados.
 \end{itemize}
 
 
@@ -536,61 +537,61 @@ Los test automáticos aportarán cobertura de código en la medida de lo posible
 \label{sec:calidad}
 
 \begin{itemize}
-	\item Req \#1.2: El servidor debe contar con los procesos necesarios para entrenar la Inteligencia Artificial.
+	\item Req \#1.2: el servidor debe contar con los procesos necesarios para entrenar la Inteligencia Artificial.
 	      \begin{itemize}
-		      \item Verificación: Consultar la base de datos para observar si los parámetros del módulo LLM se actualizan tras ejecutar el comando de entrenamiento.
-		      \item Validación: En el manual de administrador se explicará el comando que entrena el módulo LLM.
+		      \item Verificación: consultar la base de datos para observar si los parámetros del módulo LLM se actualizan tras ejecutar el comando de entrenamiento.
+		      \item Validación: en el manual de administrador se explicará el comando que entrena el módulo LLM.
 		            Además, de ser requerido, se hará una demostración del rendimiento del modelo antes y después del \textit{fine-tuning}.
 	      \end{itemize}
 
-	\item Req \#1.3: Al ser desplegado, el servidor deberá iniciar el módulo LLM y utilizarlo en el procesamiento de peticiones entrantes.
+	\item Req \#1.3: al ser desplegado, el servidor deberá iniciar el módulo LLM y utilizarlo en el procesamiento de peticiones entrantes.
 	      \begin{itemize}
-		      \item Verificación: Confirmar a través de inspección en el código y/o archivos de registro que el proceso de despliegue del servidor web incluye la inicialización del módulo LLM.
-		      \item Validación: Se confirmará con el cliente que los servicios REST estén funcionando y su \textit{output} se ajuste a los criterios acordados.
+		      \item Verificación: confirmar a través de inspección en el código y/o archivos de registro que el proceso de despliegue del servidor web incluye la inicialización del módulo LLM.
+		      \item Validación: se confirmará con el cliente que los servicios REST estén funcionando y su \textit{output} se ajusta a los criterios acordados.
 	      \end{itemize}
 
-	\item Req \#1.5: Los servicios REST deben aceptar entrada de texto en varios formatos: pdf, txt, word o texto plano en el cuerpo de la petición.
+	\item Req \#1.5: los servicios REST deben aceptar entrada de texto en varios formatos: pdf, txt, word o texto plano en el cuerpo de la petición.
 	      \begin{itemize}
-		      \item Verificación: Se harán test automáticos que validen que la extracción de texto funcione correctamente.
-		      \item Validación: En las peticiones REST se utilizarán archivos adjuntos como parametros de entrada y se confirmará una respuesta acorde.
+		      \item Verificación: se harán test automáticos que validen que la extracción de texto funciona correctamente.
+		      \item Validación: en las peticiones REST se utilizarán archivos adjuntos como parámetros de entrada y se confirmará una respuesta acorde.
 	      \end{itemize}
 
-	\item Req \#1.6: Los servicios REST devolverán la respuesta en formato simple HTML para su cómoda visualización en un navegador.
+	\item Req \#1.6: los servicios REST devolverán la respuesta en formato simple HTML para su cómoda visualización en un navegador.
 	      \begin{itemize}
-		      \item Verificación: Inspección de código.
-		      \item Validación: La respuesta de las peticiones REST se visualizarán en el navegador.
+		      \item Verificación: inspección de código.
+		      \item Validación: la respuesta de las peticiones REST se visualizará en el navegador.
 	      \end{itemize}
 
-	\item Req \#2.2: El módulo LLM, si el texto de entrada es legible, debe aportar una respuesta con un detalle y profundidad razonables,
+	\item Req \#2.2: el módulo LLM, si el texto de entrada es legible, debe aportar una respuesta con un detalle y profundidad razonables,
 	      además de ser coherente con las instrucciones recibidas.
 	      \begin{itemize}
-		      \item Verificación: Se probará el comportamiento del módulo en varias pruebas a lo largo del desarrollo,
+		      \item Verificación: se probará el comportamiento del módulo en varias pruebas a lo largo del desarrollo,
 		            las cuales podrán incluirse en el documento de análisis del \textit{dataset} o en los informes de seguimiento del módulo LLM.
-		      \item Validación: Se confirmará con el cliente que los resultados de las peticiones REST son satisfactorias.
+		      \item Validación: se confirmará con el cliente que los resultados de las peticiones REST son satisfactorias.
 	      \end{itemize}
 
-	\item Req \#3.1: El proyecto contará con test automáticos que probarán el correcto funcionamiento de los módulos no relacionados con el modelo LLM.
+	\item Req \#3.1: el proyecto contará con tests automáticos que probarán el correcto funcionamiento de los módulos no relacionados con el modelo LLM.
 	      \begin{itemize}
-		      \item Verificación: Inspección de código.
-		      \item Validación: Se describira brevemente al cliente la lista de test automáticos, mostrando su código si así se solicita.
+		      \item Verificación: inspección de código.
+		      \item Validación: se describirá brevemente al cliente la lista de tests automáticos, mostrando su código si así se solicita.
 	      \end{itemize}
 
-	\item Req \#4.1: Se entregará un documento de administrador que explicará brevemente el sistema, qué comandos de ejecución tiene y los requisitos \textit{hardware} necesarios para su correcto funcionamiento.
+	\item Req \#4.1: se entregará un documento de administrador que explicará brevemente el sistema, qué comandos de ejecución tiene y los requisitos \textit{hardware} necesarios para su correcto funcionamiento.
 	      \begin{itemize}
-		      \item Verificación: Se seguirá el manual de administrador para comprobar que se despliega el proyecto sin problemas.
-		      \item Validación: El cliente seguirá el manual de administrador para comprobar que se despliega el proyecto sin problemas.
+		      \item Verificación: se seguirá el manual de administrador para comprobar que se despliega el proyecto sin problemas.
+		      \item Validación: el cliente seguirá el manual de administrador para comprobar que se despliega el proyecto sin problemas.
 	      \end{itemize}
 
-	\item Req \#4.2: Se entregará un documento con un breve análisis de los resultados del módulo LLM que se hayan expuesto al cliente durante las reuniones de seguimiento.
+	\item Req \#4.2: se entregará un documento con un breve análisis de los resultados del módulo LLM que se hayan expuesto al cliente durante las reuniones de seguimiento.
 	      \begin{itemize}
-		      \item Verificación: Se asegurará que el contenido del documento sea adecuado.
-		      \item Validación: El cliente confirmará que el documento está completo.
+		      \item Verificación: se asegurará que el contenido del documento sea adecuado.
+		      \item Validación: el cliente confirmará que el documento está completo.
 	      \end{itemize}
 
-	\item Req \#5.1: Cualquier información del cliente que se utilice en el desarrollo del proyecto estará amparada por derechos de privacidad y propiedad intelectual.
+	\item Req \#5.1: cualquier información del cliente que se utilice en el desarrollo del proyecto estará amparada por derechos de privacidad y propiedad intelectual.
 	      \begin{itemize}
-		      \item Verificación: Inspección de código. Los datos sensibles estarán ofuscados y/o encriptados.
-		      \item Validación: Será imposible acceder a los datos sensibles a través del servidor web
+		      \item Verificación: inspección de código. Los datos sensibles estarán ofuscados y/o cifrados.
+		      \item Validación: será imposible acceder a los datos sensibles a través del servidor web.
 	      \end{itemize}
 
 \end{itemize}
@@ -602,14 +603,14 @@ Los test automáticos aportarán cobertura de código en la medida de lo posible
 El proceso de cierre se realizará de la siguiente forma:
 
 \begin{itemize}
-	\item Reunion entre el responsable del proyecto y el cliente para analizar los resultados finales.
-	      Se listarán conclusiones del proyecto, viabilidad para incluirlo en el producto Critial Match y posibles caminos de mejora.
-	\item Reunion entre el responsable del proyecto y director de proyecto para analizar los resultados del proyecto de acuerdo con el plan definido.
+	\item Reunión entre el responsable del proyecto y el cliente para analizar los resultados finales.
+	      Se listarán conclusiones del proyecto, viabilidad para incluirlo en el producto Critical Match y posibles caminos de mejora.
+	\item Reunión entre el responsable del proyecto y el director de proyecto para analizar los resultados del proyecto de acuerdo con el plan definido.
 	\item El responsable del proyecto escribirá un breve reporte, en forma de listado, de los aciertos y errores del proyecto.
 	      También incluirá los desafíos inesperados a los que se enfrentó y las acciones tomadas para superarlos.
 	\item Preparación de una presentación del trabajo y defensa pública.
-	\item Al final de la defensa pública el responsable del proyecto dedicará unos minutos en realizar el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores.
+	\item Al final de la defensa pública el responsable del proyecto dedicará unos minutos en realizar el acto de agradecimiento a todos los interesados, en especial al equipo de trabajo y colaboradores.
 	      Los agradecimientos también quedarán reflejados en la presentación y en la memoria del trabajo final.
-	\item Al tratarse de un proyecto personal, no se prevee que haya financiación alguna de los gatos correspondientes del proyecto.
+	\item Al tratarse de un proyecto personal, no se prevé que haya financiación alguna de los gastos correspondientes del proyecto.
 \end{itemize}
 \end{document}
